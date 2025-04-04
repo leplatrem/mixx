@@ -10,8 +10,8 @@ FEED_URL = "https://leplatrem.github.io/mixx/rss.xml"
 FEED_BASE_URL = "https://leplatrem.github.io/mixx/"
 
 ALLOWED_EXT = (".mp3",".mp4")
-INPUT_DIR = o.getenv("INPUT_DIR", "media")
-OUTPUT_FILE = o.getenv("OUTPUT_FILE", "rss.xml")
+INPUT_DIR = os.getenv("INPUT_DIR", "media")
+OUTPUT_FILE = os.getenv("OUTPUT_FILE", "rss.xml")
 
 items = []
 
@@ -46,7 +46,9 @@ for item in items:
 
 rss_str = xml.dom.minidom.parseString(tostring(rss)).toprettyxml(indent="  ")
 
-os.makedirs(os.path.dirname(OUTPUT_FILE), exist_ok=True)
+parent = os.path.dirname(OUTPUT_FILE)
+if parent:
+    os.makedirs(parent, exist_ok=True)
 with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
     f.write(rss_str)
 
