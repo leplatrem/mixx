@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="rss.xml">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      html, body {
+        background-color: black;
+        color: white;
+        font-family: monospace;
+        font-size: 120%;
+      }
+      section {
+        margin-bottom: 0.5em;
+        margin-bottom: 2em;
+      }
+      h1 {
+        margin: 0;
+      }
+      details summary { 
+        cursor: pointer;
+      }
+      a {
+        color: white;
+      }
+      audio {
+        width: 100%;
+      }
+      #podcast-link {
+        background-image: url('rss-icon.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        padding-left: 40px;
+
+        position: absolute;
+        top: 0;
+        right: 10px;
+      }
+    </style>
+    <script>
+      function jumpTo(e) {
+        e.preventDefault();
+        const link = e.target;
+        const seconds = link.textContent.split(":")
+          .reverse()
+          .reduce((acc, n, i) => {
+            return acc + parseInt(n, 10) * Math.pow(60, i);
+          }, 0);
+        const audio = link.closest("section").querySelector("audio");
+        audio.currentTime = seconds;
+        audio.play();
+      }
+      window.addEventListener("load", function () {
+        document.querySelectorAll("section details li a").forEach(elt => elt.onclick = jumpTo);
+      });
+    </script>
+  </head>
+  <body>
+    <section class="track">
+      <h1>#9</h1>
+      <audio controls src="9.0.mp3"></audio>
+      <details>
+        <summary>Tracklist #deep #love #house #chill</summary>
+        <ol>
+          <li><a href="#">00:00</a>: MiRET, Tuğçe Kurtiş, Santi &amp; Tuğçe, Roderic - Paloma</li>
+          <li><a href="#">05:50</a>: BLOND:ISH feat. Shawni - Wizard of Love</li>
+          <li><a href="#">11:50</a>: Mollono.Bass &amp; Ava Asante - Feeling Good</li>
+          <li><a href="#">16:55</a>: Dole &amp; Kom - Phara Oh</li>
+          <li><a href="#">23:30</a>: Adana Twins - Strange</li>
+          <li><a href="#">29:20</a>: Gespona - Smoke &amp; Mirrors</li>
+          <li><a href="#">35:15</a>: Fran&amp;co - Africa Infinita</li>
+          <li><a href="#">39:00</a>: Midas 104 - Sexual Distortion</li>
+        </ol>
+      </details>
+    </section>
+	<section class="track">
+      <h1>#8</h1>
+      <audio controls src="8.0.mp3"></audio>
+      <details>
+        <summary>Tracklist #acid #progressive #house #techno</summary>
+        <ol>
+          <li><a href="#">00:00</a>: Whitesquare - Visual Distortion Of Reality (Original Mix)</li>
+          <li><a href="#">05:30</a>: Karmon - Acido</li>
+          <li><a href="#">13:20</a>: Silver Panda - We Call This Acid (Original Mix)</li>
+          <li><a href="#">17:36</a>: Julian Jeweil - Los Pistolos</li>
+          <li><a href="#">21:50</a>: Darius Syrossian, Doorly - Gravity Check</li>
+          <li><a href="#">25:35</a>: SQL - Chromium (Original Mix)</li>
+          <li><a href="#">31:50</a>: Red Axes - Phu Quok (feat. Minh Duong)</li>
+          <li><a href="#">36:40</a>: Silver Panda - Acid or Techno (Extended Mix)</li>
+          <li><a href="#">41:00</a>: DJ Disse - Real Roots</li>
+        </ol>
+      </details>
+    </section>
+	<section class="track">
+      <h1>#7</h1>
+      <audio controls src="7.0.mp3"></audio>
+      <details>
+        <summary>Tracklist #downtempo</summary>
+        <ol>
+          <li><a href="#">00:00</a>: MONKYMAN, NasNan, IRALI - Erre (Original Mix)</li>
+          <li><a href="#">04:55</a>: Zuma Dionys, Daniel Hokum - Damn Special</li>
+          <li><a href="#">10:20</a>: Nhii - The Secret Drums of Bwiti (Turu Anasi Remix)</li>
+          <li><a href="#">14:55</a>: kermesse - Camomille</li>
+          <li><a href="#">20:10</a>: Cero39 - Calentana</li>
+          <li><a href="#">25:35</a>: Zuma Dionys - Isha</li>
+          <li><a href="#">30:00</a>: PAAX - Epico</li>
+          <li><a href="#">32:50</a>: Mula - El Molino Ft. Laura Romero</li>
+          <li><a href="#">37:00</a>: Riyoon, pshiuu feat. Ouhana - Last Sun Dance</li>
+        </ol>
+      </details>
+    </section>
+	<section class="track">
+      <h1>#6</h1>
+      <audio controls src="6.0.mp3"></audio>
+      <details>
+        <summary>Tracklist #house #tech-house</summary>
+        <ol>
+          <li><a href="#">00:00</a>: Josh Butler, Bontan - Call You Back</li>
+          <li><a href="#">05:20</a>: Latmun - Cosmic (Original Mix)</li>
+          <li><a href="#">08:55</a>: Paul C, Paolo Martini - I Believe</li>
+          <li><a href="#">14:05</a>: Hollen - Reference</li>
+          <li><a href="#">19:20</a>: Mihalis Safras - Love Away (Original Mix)</li>
+          <li><a href="#">23:50</a>: ANOTR - Help (Extended Mix)</li>
+          <li><a href="#">29:50</a>: Daniel Steinberg - 2001 (Original Mix)</li>
+          <li><a href="#">33:20</a>: Kevin McKay - The Oooh Song</li>
+          <li><a href="#">37:40</a>: Nils Penner - The Thing</li>
+        </ol>
+      </details>
+    </section>
+    <section class="track">
+     <h1>#5</h1>
+     <audio controls src="5.0.mp3"></audio>
+     <details>
+       <summary>Tracklist #deep #progressive #house #techno</summary>
+       <ol>
+       <li><a href="#">00:00</a>: Husa &amp; Zeyada, Sasha Carassi - A Little Fun (Sasha Carassi Remix)</li>
+       <li><a href="#">05:30</a>: Andre Winter - Tripppin (Maksim Dark Remix)</li>
+       <li><a href="#">11:55</a>: Oliver Huntemann - Rotlicht</li>
+       <li><a href="#">18:20</a>: Argy - Ketuvim</li>
+       <li><a href="#">22:33</a>: Josh Gigante - Attention Seeker</li>
+	   <li><a href="#">27:30</a>: Marty McCry - Filth</li>
+	   <li><a href="#">29:50</a>: Pavel Petrov - Hero</li>
+	   <li><a href="#">36:05</a>: Loco &amp; Jam - Trigger (Original mix)</li>
+	   <li><a href="#">39:22</a>: Stefano Noferini, Metodi Hristov - Reflex</li>
+	   </ol>
+	   </ol>
+     </details>
+    </section>
+	  <section class="track">
+     <h1>#4</h1>
+     <audio controls src="4.2.mp3"></audio>
+     <details>
+       <summary>Tracklist #organic #deep #house</summary>
+       <ol>
+       <li><a href="#">00:00</a>: PAAX (Tulum) - Epico</li>
+       <li><a href="#">03:00</a>: Cero39 - Beat Cari</li>
+       <li><a href="#">08:00</a>: Madmotormiquel - Wonder Bitch</li>
+       <li><a href="#">12:30</a>: Nhii feat. Pippermint - Feather (Lorie & Madmotormiquel Remix)</li>
+       <li><a href="#">18:00</a>: FEATHERED SUN - Me and My Entourage feat. Iannis Ritter, Christopher Schwarzwalder, Acid Pauli, jO.K.e, Raz Ohara, NU</li>
+       <li><a href="#">23:15</a>: Maya Jane Coles - Passing Me By</li>
+	   <li><a href="#">27:40</a>: Rey&amp;Kjavik - Rkadash</li>
+	   <li><a href="#">33:30</a>: Afgo &amp; Lemon - Devs</li>
+	   </ol>
+     </details>
+    </section>
+    <section class="track">
+     <h1>#3</h1>
+     <audio controls src="3.0.mp3"></audio>
+     <details>
+       <summary>Tracklist #downtempo #organic #house</summary>
+       <ol>
+       <li><a href="#">00:00</a>: Kusht - In The Garden ok</li>
+       <li><a href="#">05:20</a>: Eelke Kleinj - Midnight Affair</li>
+       <li><a href="#">09:20</a>: Baiuca feat. Aliboria - Mangüeiro</li>
+       <li><a href="#">13:15</a>: kośa, Turu Anasi - Bouzouki Song</li>
+       <li><a href="#">19:30</a>: Depart - Reign (Okuma Remix)</li>
+       <li><a href="#">26:30</a>: Nicola Cruz - Xique Xique - Xaxoeira</li>
+       <li><a href="#">31:50</a>: Kyrill &amp; Redford - Superstition (Lukas Endhardt Remix)</li>
+       <li><a href="#">37:30</a>: Riyoon - No Mind's Land (Okuma Remix)</li>
+	   </ol>
+     </details>
+   </section>
+   <section class="track">
+     <h1>#2</h1>
+     <audio controls src="2.0.mp3"></audio>
+     <details>
+       <summary>Tracklist #deephouse #melodic #techno</summary>
+       <ol>
+       <li><a href="#">00:00</a>: NTO - Starlings</li>
+       <li><a href="#">05:42</a>: Noir, Olivier Giacomotto, Raxon - Reste - Raxon Remix</li>
+       <li><a href="#">11:00</a>: Night Talk - Gamma</li>
+       <li><a href="#">14:35</a>: Andre Winter - Argo - Original Mix</li>
+       <li><a href="#">19:10</a>: Paul Feris, Joseph Disco - Red Pipe</li>
+       <li><a href="#">24:50</a>: Victor Ruiz - Interstellar (Original Mix)</li>
+       <li><a href="#">31:02</a>: Solee - March of the giants</li>
+       <li><a href="#">36:34</a>: 19:26, BOg - 22 Police</li>
+       </ol>
+     </details>
+   </section>
+   <section>
+     <h1>#1</h1>
+     <audio controls src="1.0.mp3"></audio>
+     <details>
+       <summary>Tracklist #melodic #house #acid #progressive</summary>
+       <ol>
+       <li><a href="#">00:00</a>: Coyu, Edu Imbernon - El Baile Alemán</li>
+       <li><a href="#">06:45</a>: Monkey Safari - Mantra</li>
+       <li><a href="#">13:15</a>: Sam Paganini - Polyester</li>
+       <li><a href="#">18:35</a>: Kino Todo - Goa Kids</li>
+       <li><a href="#">24:25</a>: Pavel Petrov - Ayahuasca - Original Mix</li>
+       <li><a href="#">30:10</a>: Pavel Petrov - Generation - Original Mix</li>
+       <li><a href="#">36:00</a>: Yousef, CamelPhat - April</li>
+       <li><a href="#">39:40</a>: Animal Trainer, Monkey Safari - Rave New World - Monkey Safari Remix</li>
+       </ol>
+     </details>
+   </section>
+   <a href="rss.xml" id="podcast-link">podcast</a>
+  </body>
+</html>
