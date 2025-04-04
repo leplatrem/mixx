@@ -1,0 +1,76 @@
+<?xml version="1.0" ?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <title>mat@home</title>
+    <link>https://leplatrem.github.io/mixx/rss.xml</link>
+    <description>mat messing with music at home</description>
+    <author>mat</author>
+    <atom:link href="https://leplatrem.github.io/mixx/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>9.0</title>
+      <link>https://leplatrem.github.io/mixx/9.0.mp3</link>
+      <guid>https://leplatrem.github.io/mixx/9.0.mp3</guid>
+      <pubDate>Fri, 04 Apr 2025 16:00:39 </pubDate>
+    </item>
+    <item>
+      <title>8.0</title>
+      <link>https://leplatrem.github.io/mixx/8.0.mp3</link>
+      <guid>https://leplatrem.github.io/mixx/8.0.mp3</guid>
+      <pubDate>Fri, 04 Apr 2025 16:00:39 </pubDate>
+    </item>
+    <item>
+      <title>7.0</title>
+      <link>https://leplatrem.github.io/mixx/7.0.mp3</link>
+      <guid>https://leplatrem.github.io/mixx/7.0.mp3</guid>
+      <pubDate>Fri, 04 Apr 2025 16:00:39 </pubDate>
+    </item>
+    <item>
+      <title>6.0</title>
+      <link>https://leplatrem.github.io/mixx/6.0.mp3</link>
+      <guid>https://leplatrem.github.io/mixx/6.0.mp3</guid>
+      <pubDate>Fri, 04 Apr 2025 16:00:39 </pubDate>
+    </item>
+    <item>
+      <title>5.0</title>
+      <link>https://leplatrem.github.io/mixx/5.0.mp3</link>
+      <guid>https://leplatrem.github.io/mixx/5.0.mp3</guid>
+      <pubDate>Fri, 04 Apr 2025 16:00:39 </pubDate>
+    </item>
+    <item>
+      <title>4.2</title>
+      <link>https://leplatrem.github.io/mixx/4.2.mp3</link>
+      <guid>https://leplatrem.github.io/mixx/4.2.mp3</guid>
+      <pubDate>Fri, 04 Apr 2025 16:00:38 </pubDate>
+    </item>
+    <item>
+      <title>4.1</title>
+      <link>https://leplatrem.github.io/mixx/4.1.mp3</link>
+      <guid>https://leplatrem.github.io/mixx/4.1.mp3</guid>
+      <pubDate>Fri, 04 Apr 2025 16:00:38 </pubDate>
+    </item>
+    <item>
+      <title>4.0</title>
+      <link>https://leplatrem.github.io/mixx/4.0.mp3</link>
+      <guid>https://leplatrem.github.io/mixx/4.0.mp3</guid>
+      <pubDate>Fri, 04 Apr 2025 16:00:38 </pubDate>
+    </item>
+    <item>
+      <title>3.0</title>
+      <link>https://leplatrem.github.io/mixx/3.0.mp3</link>
+      <guid>https://leplatrem.github.io/mixx/3.0.mp3</guid>
+      <pubDate>Fri, 04 Apr 2025 16:00:38 </pubDate>
+    </item>
+    <item>
+      <title>2.0</title>
+      <link>https://leplatrem.github.io/mixx/2.0.mp3</link>
+      <guid>https://leplatrem.github.io/mixx/2.0.mp3</guid>
+      <pubDate>Fri, 04 Apr 2025 16:00:38 </pubDate>
+    </item>
+    <item>
+      <title>1.0</title>
+      <link>https://leplatrem.github.io/mixx/1.0.mp3</link>
+      <guid>https://leplatrem.github.io/mixx/1.0.mp3</guid>
+      <pubDate>Fri, 04 Apr 2025 16:00:38 </pubDate>
+    </item>
+  </channel>
+</rss>
